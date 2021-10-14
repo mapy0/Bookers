@@ -3,6 +3,7 @@ Rails.application.routes.draw do
 #-----------Home 画面-------------
  get 'top' => 'homes#top'
  root "homes#top" # https://bookers-level1.herokuapp.com/ をhome画面にする。
- 
+
  #-----------Booker  画面-------------
+ resources :books
 end
